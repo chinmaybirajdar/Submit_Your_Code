@@ -5,13 +5,13 @@ const bodyParser = require("body-parser");
 const app = express();
 const port = 4000;
 
-app.use(cors(
-  {
-    origin: ["https://submit-your-code-frontend.vercel.app/"],
-    methods: ["POST", "GET"],
-    credentials: true
-  }
-));
+// app.use(cors(
+//   {
+//     origin: ["https://submit-your-code-frontend.vercel.app/"],
+//     methods: ["POST", "GET"],
+//     credentials: true
+//   }
+// ));
 app.use(bodyParser.json());
 app.use(function (req, res, next) {
    res.header("Access-Control-Allow-Origin", "*");
