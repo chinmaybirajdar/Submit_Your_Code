@@ -32,7 +32,7 @@ function App() {
     ) {
       try {
         const result = await fetch("https://submit-your-code-api.vercel.app/user", {
-          mode: "cors",
+          mode: "no-cors",
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -56,7 +56,7 @@ function App() {
   const handleClick = async () => {
     try {
       const data = await fetch("https://submit-your-code-api.vercel.app/user", {
-        mode: "cors",
+        mode: "no-cors",
         method: "GET",
         headers: {
           "Content-type": "application/json",
