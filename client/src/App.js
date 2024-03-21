@@ -37,6 +37,7 @@ function App() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(myData),
+          credentials: 'include',
         });
 
         const response = await result.json();
@@ -58,6 +59,7 @@ function App() {
         headers: {
           "Content-type": "application/json",
         },
+        credentials: 'include',
       });
       const response = await data.json();
       console.log(response.result);
