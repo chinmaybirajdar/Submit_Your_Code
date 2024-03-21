@@ -31,7 +31,7 @@ function App() {
       sourcecode !== ""
     ) {
       try {
-        const result = await fetch("http://localhost:4000/user", {
+        const result = await fetch("https://submit-your-code-backend-67vn8g0s6-chinmays-projects-f92c311f.vercel.app/user", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -53,7 +53,7 @@ function App() {
 
   const handleClick = async () => {
     try {
-      const data = await fetch("http://localhost:4000/user", {
+      const data = await fetch("https://submit-your-code-backend-67vn8g0s6-chinmays-projects-f92c311f.vercel.app/user", {
         method: "GET",
         headers: {
           "Content-type": "application/json",
