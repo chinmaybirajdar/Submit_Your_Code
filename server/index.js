@@ -5,7 +5,13 @@ const bodyParser = require("body-parser");
 const app = express();
 const port = 4000;
 
-app.use(cors());
+app.use(cors(
+  {
+    origin: ["submit-your-code-frontend.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true
+  }
+));
 app.use(bodyParser.json());
 
 app.post("/user", (req, res) => {
