@@ -7,7 +7,7 @@ const port = 4000;
 
 app.use(cors(
   {
-    origin: [""],
+    origin: ["https://submit-your-code-frontend.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
   }
